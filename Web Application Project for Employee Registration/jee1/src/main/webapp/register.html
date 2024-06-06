@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+			background-image: url(https://static.vecteezy.com/system/resources/thumbnails/015/132/071/small/abstract-the-cyan-background-for-design-hd-wallpaper-free-vector-free-photo.jpg);
+			background-size: cover;
+			position: relative;		
+	    }
+	     .one {
+            border: 3px solid teal;
+            color: orangered;
+            font-style: italic;
+            font-family: Verdana;
+            display: flex;
+            flex-direction: row;
+        }
+
+        h1 {
+            margin-left: 25%;
+            text-align: center;
+            white-space: nowrap;
+            width: 50%;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #FFB07F;
+            border: 5px solid red;
+            border-radius: 10px;
+           
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            color: black;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 3px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+	</style>
+</head>
+<body>
+    <div class="one">
+        <h1>Employee Registration Form</h1>
+    </div>
+    <div class="container">
+		 <form action="register" method="post">
+            <table>
+                <tr>
+                    <th>ID:</th>
+                    <td><input type="text" id="id" name="id" size="20" required></td>
+                </tr>
+                <tr>
+                    <th>Name:</th>
+                    <td><input type="text" id="name" name="name" size="20" required></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="email" id="email" name="email" size="20" required></td>
+                </tr>
+                <tr>
+                    <th>Department:</th>
+                    <td><input type="text" id="department" name="department" size="20" required></td>
+                 </tr>
+
+                <tr>
+                    <th>Salary:</th>
+                    <td><input type="text" id="salary" name="salary" size="20" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+
